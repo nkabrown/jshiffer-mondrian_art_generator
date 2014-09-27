@@ -11,9 +11,9 @@
 		 	var colors = ['red', 'blue', 'yellow'];
 		 	var minRowCols = 4;
 		 	var maxRowCols = 6;
-		 	var recursionChance = .33;
+		 	var recursionChance = .2;
 		 	var recursionDepreciationRate = .05;
-		 	var styleChance = .20;
+		 	var styleChance = .3;
 
 		 	//helper functions
 
@@ -42,8 +42,10 @@
 		 			var feelingLucky = (Math.random() < chance) ? true : false;
 
 		 			if (feelingLucky) {
-		 				var newerTable = generateMondrianTable(0, 2, chance * recursionDepreciationRate);
-		 				$(this).append(newerTable);
+		 				var newerTable = generateMondrianTable(1, 3, chance * recursionDepreciationRate);
+		 				$(this).append(newerTable).css({
+		 						'border' : 'none'
+		 					});
 		 			}
 		 		});
 
