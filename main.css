@@ -1,0 +1,19 @@
+table {
+	width: 100%;
+	height: auto;
+	border: 2px solid black;
+}
+
+td {
+	border: 3px solid black;
+}
+
+table table {
+	border: 0;
+	height: 100%;
+}
+
+.frame > table {
+	width: 500px;
+	height: 500px;
+}
